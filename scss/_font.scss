@@ -1,0 +1,40 @@
+/* string */
+@use '_number' as *;
+
+$font-family-header: "Roboto";
+$font-family-inter: Inter;
+
+.roboto {
+    font-family: $font-family-header;
+}
+
+
+.letra {
+    color: $white;
+    font-family: $font-family-header, sans-serif;
+    font-size: var(--Roboto, 25px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+    font-size: $font-size-nav;
+}
+
+.letra-pequeña {
+    color: #fff;
+    font-family: $font-family-header, sans-serif;
+    font-size: var(--Roboto, 25px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+    font-size: 13px;
+}
+
+.titulo {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--Roboto, 25px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+    font-size: $font-size-titulo;
+}
