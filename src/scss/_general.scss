@@ -1,0 +1,242 @@
+@use 'layouts' as *;
+@use 'color' as *;
+
+
+$font-family-header: "Roboto";
+$cien: 100%;
+
+.text-center {
+    text-align: center;
+}
+
+
+.social-icons i {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.text-white {
+    color: $white;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(1fr, 10);
+    grid-template-rows: repeat(1fr, 2);
+    padding: $padding;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(1fr, 10);
+    grid-template-rows: repeat(1fr, 5);
+    padding: $padding;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(1fr, 10);
+    grid-template-rows: repeat(1fr, 3);
+    padding: $padding;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: $padding;
+    margin-top: 30px;
+
+}
+
+.section1 {
+    grid-column: 1/11;
+    grid-row: 1/2;
+}
+
+
+.btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+
+    &-transparent {
+        border: 0.5px $white solid;
+        background-color: transparent;
+        color: $white;
+        margin-bottom: 10px;
+    }
+
+    &-white {
+        background-color: $white;
+        color: black;
+        border: none;
+    }
+
+    &-black {
+        background-color: $black;
+        color: $white;
+        border: none;
+    }
+
+    &-red {
+        background-color: $secundario-rojo1;
+        color: $white;
+        border: none;
+    }
+
+
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+.justify-content-center {
+    justify-content: center;
+}
+
+footer {
+    background-color: $secundario-rojo1;
+}
+
+.section2 {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    margin-bottom: 110px;
+}
+
+
+.section3 {
+    grid-column: 6/11;
+    grid-row: 2/3;
+    margin-left: 80px;
+}
+
+.section4 {
+    grid-column: 1/11;
+    grid-row: 1/2;
+}
+
+.section5 {
+    grid-column: 1/11;
+    grid-row: 2/3;
+
+}
+
+.section6 {
+    grid-column: 1/11;
+    grid-row: 3/4;
+
+}
+
+.section7 {
+    grid-column: 1/11;
+    grid-row: 4/5;
+
+}
+
+.section8 {
+    grid-column: 1/11;
+    grid-row: 5/6;
+
+}
+
+.section9 {
+    grid-column: 1/11;
+    grid-row: 1/2;
+}
+
+.section10 {
+    grid-column: 1/11;
+    grid-row: 2/3;
+    margin-top: 35%;
+}
+
+.section11 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 20px;
+}
+
+.section12 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.section13 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.section14 {
+    grid-column: 3/11;
+    grid-row: 1/2;
+    position: relative;
+    bottom: 0;
+}
+
+.comentario-rojo {
+    background-color: $secundario-rojo1;
+    border-radius: 20px;
+    padding: 10px 350px 10px 20px;
+    color: $white;
+    font-family: $font-family-header, sans-serif;
+
+}
+
+.comentario-gris {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px 200px 10px 20px;
+    color: $black;
+    font-family: $font-family-header, sans-serif;
+}
+
+.fondo-icono-redondo {
+    background-color: $secundario-rojo1;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.background-image {
+    background-image: url(../img/Lucid_Origin_I_want_to_create_a_visually_stunning_background_v_2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+@media (max-width:1075px) {
+
+    .none {
+        display: none;
+    }
+
+    .letra {
+        font-size: 10px;
+    }
+
+    .letra2 {
+        font-size: 25px;
+    }
+
+}

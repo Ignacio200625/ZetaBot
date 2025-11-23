@@ -1,5 +1,6 @@
 /* string */
-@use '_number' as *;
+@use 'number' as *;
+@use 'color' as *;
 
 $font-family-header: "Roboto";
 $font-family-inter: Inter;
@@ -10,6 +11,16 @@ $font-family-inter: Inter;
 
 
 .letra {
+    color: $white;
+    font-family: $font-family-header, sans-serif;
+    font-size: var(--Roboto, 25px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%;
+    font-size: $font-size-nav;
+}
+
+.letra2 {
     color: $white;
     font-family: $font-family-header, sans-serif;
     font-size: var(--Roboto, 25px);
@@ -37,4 +48,20 @@ $font-family-inter: Inter;
     font-weight: 400;
     line-height: 190%;
     font-size: $font-size-titulo;
+}
+
+.titulo-sign-up {
+    font-size: 80px;
+    font-weight: 900;
+    color: #6b0000;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.letra-input {
+    color: #ad0000;
+    font-weight: bold;
+    font-family: $font-family-header, sans-serif;
+
 }

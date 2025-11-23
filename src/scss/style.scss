@@ -1,0 +1,32 @@
+@use 'color' as *;
+@use 'font' as *;
+@use 'number' as *;
+@use 'layouts' as *;
+@use '_general' as *;
+
+
+$cien: 100%;
+$margin-top: 100px;
+$padding-footer: 20px;
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+    background: {
+        image: url("../img/fondo1.svg"), url("../img/fondo2.svg");
+        repeat: no-repeat, no-repeat;
+        position: center, center;
+        size: cover, cover;
+        attachment: fixed;
+    }
+
+    background-color: #1a0000;
+}
+
+//npm run buil
